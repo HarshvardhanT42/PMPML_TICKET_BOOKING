@@ -1,0 +1,142 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+        :root {
+            --green: green;
+            --darkgreen: #013220;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .1rem 1rem rgba(0,0,0.1);
+            --border: 2rem solid rgba(0,0,0.1);
+            --outline: .1rem solid rgba(0,0,0.1);
+        }
+
+        * {
+            font-family: 'Poppins',sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+        }
+
+        body {
+            background: #eee;
+            overflow-y: scroll;
+        }
+
+
+        .main-content {
+            background-color: white; /* Set background color to white */
+            padding: 2rem; /* Add padding as needed */
+            margin-top: 10vh; /* Set margin top dynamically based on header height */
+            margin-bottom: 20vh;
+            font-size: 2rem;
+            overflow-x: scroll;
+            height: 720px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+
+
+        .header,
+        .footer {
+            position: fixed;
+            width: 100%;
+            background: #4cbb17;
+            box-shadow: var(--box-shadow);
+        }
+
+        .header {
+            height: 10vh; /* Set height to 10% of the viewport height */
+            top: 0;
+            left: 0;
+            padding: 1rem 9%; /* Reduced padding for better visual appearance */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer {
+            font-size: 1rem;
+             height: 10em; /* Set height to 20% of the viewport height */
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .header .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .title {
+            font-size: 5rem; /* Adjust size as needed */
+            margin-left: 2rem; /* Adjust spacing as needed */
+            font-weight: bold; /* Make it bold */
+            text-align: center; /* Align center */
+        }
+
+        .header img.logo {
+            max-height: 100%; /* Adjusted to 100% of the header's height */
+            max-width: 18%; /* Allow the width to adjust proportionally */
+            border-radius: 50%;
+        }
+
+        .header .icon div {
+            height: 4.5rem;
+            width: 4.5rem;
+            line-height: 4.5rem;
+            border-radius: .5rem;
+            background: #eee;
+            color: var(--black);
+            font-size: 2rem;
+            margin-right: .3rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .header .icon div:hover {
+            background: var(--green);
+            color: white;
+        }
+
+        #menu-btn {
+            display: none;
+        }
+
+        .footer .navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.footer .navbar a {
+    font-size: 4vw; /* Set font size to be 2 times the viewport width */
+    margin: 0 2rem;
+    color: var(--black);
+    font-weight: bolder;
+    position: relative;
+}
+
+
+
+.footer .navbar a:hover {
+            color: var(--green);
+}
+
+
